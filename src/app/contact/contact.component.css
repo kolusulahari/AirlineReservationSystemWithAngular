@@ -1,0 +1,16 @@
+#one{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5d000edda2c5c60001275644/1560289148473-DEP4MB1W052CYREKWMKU/ke17ZwdGBToddI8pDm48kM_lk3tGR7lbYZN6HdDr02oUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcqiC5-6DRfPD1L--U0KhN5-Nocm5vSulD1ymgHOHZ5TxXRG57tkAr3iC01bPptX2J/feature-background-home.jpg?format=2500w");
+    /* background-repeat: no-repeat; */
+    background-size: cover;
+    height: 400px;
+    
+
+}
+.ftco-section{
+    background-image: url("https://cdn.pixabay.com/photo/2020/05/05/17/59/background-5134257_640.jpg");
+    background-size: cover;
+    
+} 
+span{
+    margin-top: 80px;
+}

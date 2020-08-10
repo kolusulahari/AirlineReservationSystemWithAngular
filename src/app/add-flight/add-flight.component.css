@@ -1,0 +1,25 @@
+body {
+  background-image: url("https://images.hdqwalls.com/wallpapers/boeing-737-next-generation-planes-minimalism-4k-st.jpg");
+   
+  background-position: 0rem; 
+  background-repeat: no-repeat; 
+  background-size: cover;
+}
+.card{
+  background-image: url("https://blog.sevenponds.com/wp-content/uploads/2017/04/night-sky-youtube.jpg");
+}
+label{
+  color: white;
+}
+
+input.ng-invalid.ng-touched {
+    border: 1px solid red;
+  }
+  
+  input.ng-valid.ng-touched {
+    border: 1px solid darkorange;
+  }
+  p{
+    font-weight: bolder;
+    color: red;
+  }

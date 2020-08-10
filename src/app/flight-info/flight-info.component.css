@@ -1,0 +1,29 @@
+body{
+    background-image: url("https://images.unsplash.com/photo-1513002749550-c59d786b8e6c?ixlib=rb-1.2.1&w=1000&q=80");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+     height: 650px;
+
+}
+#data {
+    color: black;
+     font-weight: 900;
+}
+table{
+    margin-left: auto;
+    margin-right: auto;    
+}
+.thead{
+  background-color:black;
+}
+.modal{
+    /* background-image: url("https://www.tskaviation.com/wp-content/uploads/2018/12/slide2.jpg"); */
+    background-image: url("https://www.boell.de/sites/default/files/uploads/2016/06/airbus-konzeptstudie_e-thrust.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  label{
+    color: white;
+  }

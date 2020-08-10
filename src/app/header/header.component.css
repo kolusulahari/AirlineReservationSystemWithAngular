@@ -1,0 +1,15 @@
+  nav {
+    box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  #title {
+    font-size: 30px;
+    margin-left: 20px;
+  }
+  #fields {
+   padding-left: 100px;
+  }
+  li {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  

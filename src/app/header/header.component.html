@@ -1,0 +1,66 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+  <a class="navbar-brand" routerLink="#" id="title"> IndianAirways</a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto" id="fields">
+      <li class="nav-item active">
+        <a class="nav-link" routerLink="/">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active" *ngIf="isAdmin()">
+        <a class="nav-link" routerLink="/flightInfo">Flight Info<span class="sr-only">(current)</span></a>
+      </li>
+      
+      <li class="nav-item active" *ngIf="isCustomer()">
+        <a class="nav-link" routerLink="/preview">Search Flight<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active" *ngIf="isAdmin()">
+        <a class="nav-link" routerLink="/category">Add Admin<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active" *ngIf="isAdmin()">
+        <a class="nav-link" routerLink="/add-flight">Add Flight<span class="sr-only">(current)</span></a>
+      </li>
+     
+      <!-- <li class="nav-item active" *ngIf="isExecutive()">
+        <a class="nav-link" routerLink="/occupany-details">Occupany Details<span class="sr-only">(current)</span></a>
+      </li> -->
+      <li class="nav-item active" *ngIf="isAdmin()">
+        <a class="nav-link" routerLink="/airport">Airport Details<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active" *ngIf="isAdmin()">
+        <a class="nav-link" routerLink="/add-airport">Add Airport<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item active" >
+        <a class="nav-link" routerLink="/contact">Contact Us</a>
+      </li>
+    </ul>
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item dropdown" *ngIf="isCustomer()">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+          aria-haspopup="true" aria-expanded="false">
+          My Profile
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" routerLink="/profile">My Details</a>
+        </div>
+      </li>
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item active"  *ngIf= (!isAdmin()&&!isCustomer())>
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+
+        <li class="nav-item active" *ngIf="isAdmin() || isCustomer() " >
+          <a class="nav-link" (click)="logout()">Logout</a>
+
+        </li>
+
+      </ul>
+    </ul>
+  </div>
+</nav>

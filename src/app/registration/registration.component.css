@@ -1,0 +1,9 @@
+body{
+   
+    background-image: url("https://wallpapercave.com/wp/wp2574313.jpg");
+    background-size: cover;
+    background-position-x: center;
+}
+.card {
+    height: 665px;
+}

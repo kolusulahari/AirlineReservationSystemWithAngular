@@ -1,0 +1,13 @@
+body {
+    background-image: url("https://cdn.cnn.com/cnnnext/dam/assets/191128141624-aerion-as2-bluesky-hr.jpg");
+   
+    background-position: 0rem; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+  }
+  .card {
+    background-image: url("https://blog.sevenponds.com/wp-content/uploads/2017/04/night-sky-youtube.jpg");
+    }
+  label{
+      color: white;
+    }

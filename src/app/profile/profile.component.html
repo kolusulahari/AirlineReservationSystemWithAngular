@@ -1,0 +1,52 @@
+<body>
+    
+        <div class="ngifbg" style="background-image:url('https://webgradients.com/public/webgradients_png/015%20Mean%20Fruit.png');height: 650px;" *ngIf="profileInfo.length == 0">
+            <h1 *ngIf="profileInfo.length == 0" style="padding-top: 100px;"> No Bookings So far.....!!!!</h1>
+        </div>
+<table class="table table-borderless ">
+    
+    <thead class="thead" *ngIf="profileInfo.length >=1">
+        <tr>
+            <th scope="col">User ID</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">Booking ID</th>
+            <th scope="col">Flight Number</th>
+            <th scope="col">Class Type</th>
+            <th scope="col">Departure City</th>
+            <th scope="col">Departure Date</th>
+            <th scope="col">Departure Time</th>
+            <th scope="col">Arrival City</th>
+            <th scope="col">Arrival Date</th>
+            <th scope="col">Arrival Time</th>
+            <th scope="col">No. of passengers</th>
+            <th scope="col">Total Fare</th>
+            <th scope="col">Cancellation</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let profile of profileInfo">
+
+            <td>{{profile.userId}}</td>
+            <td>{{profile.firstName}}</td>
+            <td>{{profile.lastName}}</td>
+            <td>{{profile.bookingId}}</td>
+            <td>{{profile.flightNo}}</td>
+            <td>{{profile.classType}}</td>
+            <td>{{profile.departureCity}}</td>
+            <td>{{profile.departureDate}}</td>
+            <td>{{profile.departureTime}}</td>
+            <td>{{profile.arrivalCity}}</td>
+            <td>{{profile.arrivalDate}}</td>
+            <td>{{profile.arrivalTime}}</td>
+            <td>{{profile.passengers}}</td>
+            <td>{{profile.totalFare |currency: 'INR'}}</td>
+            <td>
+                <button class="btn btn-danger" (click)='cancelBookedFlight(profile)'>Cancel</button>
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+
+</body>
